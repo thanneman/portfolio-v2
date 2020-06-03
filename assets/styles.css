@@ -38,8 +38,8 @@ h3 {
 }
 
 h4 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
   font-size: 28px;
 }
 
@@ -188,7 +188,7 @@ section {
   align-items: center;
   flex-direction: row;
 
-  background-color: #cbcbcb;
+  background-color: #ededed;
   border-radius: 10px;
   margin: 20px auto;
   padding: 10px;
@@ -222,6 +222,8 @@ textarea {
   border: 2px solid #cbcbcb;
   border-radius: 5px;
   font-size: 24px;
+  appearance: none;
+  outline: 0;
 }
 
 button {
@@ -230,6 +232,7 @@ button {
   padding: 10px 0;
   background-color: #cbcbcb;
   border-radius: 5px;
+  border-color: transparent;
   font-size: 24px;
   font-weight: 400;
 }
