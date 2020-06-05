@@ -63,7 +63,7 @@ a:hover {
 
 main {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -125,13 +125,11 @@ section {
   cursor: pointer;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
+@media only screen and (min-width: 768px) {
+  .openbtn {
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
   }
 }
 
@@ -208,12 +206,35 @@ header > p {
 .more-info {
   position: absolute;
   left: calc(50% + -12.5px);
-  bottom: 25px;
+  bottom: 50px;
   font-size: 50px;
   text-align: center;
   animation-delay: 2s;
   animation: bounce 1.5s;
   animation-iteration-count: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 200px;
+    background: url(../assets/images/me.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  header:after {
+    margin-left: -200px;
+  }
+
+  header > h1 {
+    font-size: 70px;
+  }
+
+  header > p {
+    font-size: 25px;
+  }
 }
 
 /* Projects */
@@ -326,6 +347,26 @@ svg {
   padding: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .resume i,
+  svg {
+    font-size: 100%;
+  }
+
+  .resume-work {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .resume-skills {
+    flex-direction: row;
+  }
+
+  .skills-sub {
+    margin: 5px 100px 5px 0;
+  }
+}
+
 /* Contact */
 .contact-social a {
   font-size: 30px;
@@ -336,7 +377,7 @@ svg {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 
   background-color: #ededed;
   border-radius: 10px;
@@ -369,6 +410,7 @@ input,
 textarea {
   width: 100%;
   padding: 10px;
+  margin: 0 auto;
   border: 2px solid #cbcbcb;
   border-radius: 5px;
   font-size: 24px;
@@ -378,13 +420,19 @@ textarea {
 
 button {
   width: 100%;
-  margin-top: 10px;
+  margin: 10px auto;
   padding: 10px 0;
   background-color: #cbcbcb;
   border-radius: 5px;
   border-color: transparent;
   font-size: 24px;
   font-weight: 400;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: #9f9f9f;
 }
 
 .contact-social {
