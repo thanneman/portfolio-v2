@@ -12,8 +12,8 @@
     <meta name="author" content="Travis Hanneman" />
 
     <!-- Fonts and Stylesheets -->
-    <script src="https://kit.fontawesome.com/1141747075.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <!-- Social Tags -->
     <meta property="og:title" content="Travis Hanneman | Full Stack Developer" />
@@ -23,18 +23,29 @@
     <meta name="twitter:card" content="summary_large_image" />
 </head>
 
-<body>
+<body id="home">
+    <!-- Navigation -->
+    <span class="openbtn"><i class="fas fa-bars"></i></span>
+    <nav role='navigation' id="mySidenav" class="sidenav">
+        <span class="closebtn"><i class="fas fa-times"></i></span>
+        <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#resume">Resume</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header>
+        <h1>Hi, I'm Travis</h1>
+        <p>Developer - Designer - Freelancer</p>
+        <p>A full stack developer, living in Arizona, with a passion for building things from the ground up.</p>
+        <a class="header-contact" href="#contact">Contact Me</a>
+        <div class="more-info"><a class="nav-link" href="#projects"><i class="fas fa-chevron-down"></i></a></div>
+    </header>
     <main>
-        <!-- Header -->
-        <header>
-            <h1>Hi, I'm Travis</h1>
-            <p>A full stack developer <span role="img" aria-label="man at computer">👨‍💻</span>, living in Arizona
-                <span role="img" aria-label="hammer an wrench">🌵</span>, with a passion for
-                building <span role="img" aria-label="hammer an wrench">🛠️</span> things from the ground up.</p>
-        </header>
-
         <!-- Projects -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <!-- Project 1 -->
             <div class="project-card">
@@ -79,9 +90,9 @@
         </section>
 
         <!-- Resume -->
-        <section class="resume">
+        <section class="resume" id="resume">
             <h2>Resume <a href="assets/images/TravisHanneman-Resume.pdf" target="_blank" rel="noopener"><i
-                        class="fas fa-external-link-alt"></i></a>
+                        class="fas fa-file-alt"></i></a>
             </h2>
             <h3>Work</h3>
             <div class="resume-work">
@@ -93,7 +104,7 @@
                 </div>
                 <div class="work-sub">
                     <p><span class="resume-bold">Lucky Starr Contracting</span></p>
-                    <p>Frontend Developer</p>
+                    <p>Front-end Developer</p>
                     <p><span class="resume-light">2020 - Present</span></p>
                 </div>
                 <div class="work-sub">
@@ -155,7 +166,7 @@
         </section>
 
         <!-- Contact -->
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
             <!-- Job Status -->
             <div class="job-status">
@@ -196,6 +207,7 @@
             <p>&copy;2019-<span class="year"></span> Travis Hanneman</p>
         </footer>
     </main>
+    <script src="https://kit.fontawesome.com/1141747075.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/main.js"></script>
 </body>
