@@ -75,9 +75,9 @@ section {
 /* Navigation */
 .openbtn {
   position: fixed;
-  top: 0px;
+  top: 20px;
   right: 20px;
-  font-size: 50px;
+  font-size: 30px;
   z-index: 900;
   cursor: pointer;
 }
@@ -114,9 +114,9 @@ section {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
   margin-left: 50px;
   color: #f1f1f1;
 }
@@ -146,7 +146,7 @@ header {
   min-height: 35em;
   padding: 25px;
   background-color: #000000;
-  background: url(/assets/images/me.jpg) no-repeat center center scroll;
+  background: url(../assets/images/me.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -208,7 +208,7 @@ header > p {
 .more-info {
   position: absolute;
   left: calc(50% + -12.5px);
-  bottom: 15px;
+  bottom: 25px;
   font-size: 50px;
   text-align: center;
   animation-delay: 2s;
@@ -228,7 +228,7 @@ header > p {
   flex-direction: column;
 }
 
-.project-card:nth-child(2) {
+/* .project-card:nth-child(2) {
   margin-top: 20px;
   background-color: #48dacb;
 }
@@ -243,7 +243,7 @@ header > p {
 
 .project-card:nth-child(5) {
   background-color: burlywood;
-}
+} */
 
 .project-info > h4 {
   line-height: normal;
@@ -268,7 +268,7 @@ header > p {
   font-size: 18px;
 }
 
-.project-link .fas {
+.project-link i {
   font-size: 80%;
   margin-left: 8px;
 }
@@ -280,6 +280,12 @@ header > p {
 /* Resume */
 .resume > h3 {
   margin-top: 20px;
+}
+
+.resume i,
+svg {
+  font-size: 80%;
+  margin-right: 5px;
 }
 
 .resume-work {
@@ -321,8 +327,8 @@ header > p {
 }
 
 /* Contact */
-.fas {
-  font-size: 60%;
+.contact-social a {
+  font-size: 30px;
 }
 
 .job-status {
@@ -388,11 +394,11 @@ button {
   align-items: center;
   flex-direction: row;
   margin: 20px 0;
-  font-size: 35px;
 }
 
 .contact-social a {
   margin: 0 8px;
+  font-size: 25px;
 }
 
 /* Footer */

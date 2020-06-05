@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   // open side nav
   $('.openbtn').click(function() {
-    $('#mySidenav').css('width', '250px');
+    $('#mySidenav').css('width', '160px');
   });
 
   // close side nav
