@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   color: #22252c;
   background-color: #ffffff;
+  width: 100%;
 }
 
 h1 {
@@ -126,6 +127,26 @@ section {
   cursor: pointer;
 }
 
+.nav-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.nav-social a {
+  margin: 0 5px;
+  padding: 0;
+  font-size: 18px;
+  color: #818181;
+}
+
+.nav-social a:hover {
+  color: #f1f1f1;
+}
+
 @media only screen and (min-width: 768px) {
   .openbtn {
     top: 40px;
@@ -141,28 +162,20 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 100%;
   height: 100vh;
-  min-height: 35em;
   padding: 25px;
   background-color: #000000;
-  background: url(../assets/images/me.jpg) no-repeat center center scroll;
+  background: linear-gradient(
+      45deg,
+      rgba(35, 166, 213, 0.52),
+      rgba(35, 213, 171, 0.73)
+    ),
+    url(../assets/images/me.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 0;
-  animation: fadeIn 1.5s;
-}
-
-header::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  margin-left: -25px;
-  height: 100%;
-  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
-  opacity: 0.6;
-  z-index: -1;
 }
 
 header > h1 {
@@ -170,7 +183,6 @@ header > h1 {
   font-weight: 700;
   font-size: 50px;
   color: #22252c;
-  animation: fadeInDown 2.5s;
 }
 
 header > p {
@@ -180,7 +192,6 @@ header > p {
   color: #22252c;
   line-height: 1.6;
   margin-top: 15px;
-  animation: fadeIn 3.5s;
 }
 
 .header-contact {
@@ -195,7 +206,6 @@ header > p {
   border: 2px solid #22252c;
   font-size: 18px;
   font-weight: 400;
-  animation: fadeIn 3.5s;
   transition: 0.25s ease-in-out;
 }
 
@@ -210,23 +220,45 @@ header > p {
   bottom: 50px;
   font-size: 50px;
   text-align: center;
-  animation-delay: 2s;
-  animation: bounce 1.5s;
-  animation-iteration-count: 2;
 }
 
 @media only screen and (min-width: 768px) {
   header {
-    padding: 200px;
-    background: url(../assets/images/me.jpg) no-repeat center center fixed;
+    padding: 100px;
+    background: linear-gradient(
+        45deg,
+        rgba(35, 166, 213, 0.52),
+        rgba(35, 213, 171, 0.73)
+      ),
+      url(../assets/images/me.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
 
-  header:after {
-    margin-left: -200px;
+  header > h1 {
+    font-size: 60px;
+  }
+
+  header > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 200px;
+    background: linear-gradient(
+        45deg,
+        rgba(35, 166, 213, 0.52),
+        rgba(35, 213, 171, 0.73)
+      ),
+      url(../assets/images/me.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   header > h1 {
@@ -323,7 +355,6 @@ header > p {
     margin-left: 0;
     margin-bottom: 30px;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.15);
-    transition: all 0.5 ease-in-out;
   }
 
   .project-card:hover {
@@ -331,19 +362,28 @@ header > p {
   }
 
   .project-info {
-    width: 475px;
+    width: 55%;
   }
 
   .project-image {
     display: block;
     position: absolute;
-    width: 500px;
-    top: 20px;
-    right: -150px;
+    width: 320px;
+    height: 115%;
+    top: 1px;
+    right: 0;
+    content: ' ';
+    background-size: cover;
+    background-position: left 20px;
+    background-repeat: no-repeat;
   }
+}
 
-  .project-image img {
-    width: 100%;
+@media only screen and (min-width: 1024px) {
+  .project-image {
+    width: 380px;
+    height: 135%;
+    background-position: left 10px;
   }
 }
 
