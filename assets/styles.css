@@ -418,6 +418,10 @@ svg {
   margin: 5px 0;
 }
 
+.work-sub > a {
+  font-size: 20px;
+}
+
 .resume-bold {
   font-weight: 400;
   font-size: 23px;
