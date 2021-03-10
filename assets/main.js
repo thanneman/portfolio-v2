@@ -9,12 +9,17 @@ $(document).ready(function() {
     $('#mySidenav').css('margin-right', '-160px');
   });
 
-  // $('.openbtn').keyup(function() {
-  //   if(e.keyCode == 13) {
-  //     e.preventDefault();
-  //     $('#mySidenav').css('margin-right', '0px');
-  //   }
-  // });
+  $('.openbtn').bind('keypress', function(e) {
+    if(e.keyCode==13){
+      $('#mySidenav').css('margin-right', '0px');
+    }
+  });
+
+  $('.closebtn').bind('keypress', function(e) {
+    if(e.keyCode==13){
+      $('#mySidenav').css('margin-right', '-160px');
+    }
+  });
 
   // auto scroll
   $('.nav-link').click(function() {
