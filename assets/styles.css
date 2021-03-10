@@ -38,7 +38,7 @@ h3 {
   color: #22252c;
 }
 
-h4 {
+.project-info h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -74,6 +74,16 @@ section {
   margin-top: 50px;
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* Navigation */
 .openbtn {
   position: fixed;
@@ -90,7 +100,7 @@ section {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 160px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -98,6 +108,7 @@ section {
   background-color: #22252c;
   overflow-x: hidden;
   padding-top: 60px;
+  margin-right: -160px;
   transition: 0.5s;
 }
 
@@ -306,7 +317,7 @@ header > p {
   width: 100%;
 }
 
-.project-info > h4 {
+.project-info > h3 {
   line-height: normal;
 }
 
@@ -428,7 +439,7 @@ svg {
 }
 
 .resume-light {
-  color: #999999;
+  color: #757575;
 }
 
 .resume-skills {

@@ -1,13 +1,20 @@
 $(document).ready(function() {
   // open side nav
   $('.openbtn').click(function() {
-    $('#mySidenav').css('width', '160px');
+    $('#mySidenav').css('margin-right', '0px');
   });
 
   // close side nav
   $('.closebtn').click(function() {
-    $('#mySidenav').css('width', '0px');
+    $('#mySidenav').css('margin-right', '-160px');
   });
+
+  // $('.openbtn').keyup(function() {
+  //   if(e.keyCode == 13) {
+  //     e.preventDefault();
+  //     $('#mySidenav').css('margin-right', '0px');
+  //   }
+  // });
 
   // auto scroll
   $('.nav-link').click(function() {
