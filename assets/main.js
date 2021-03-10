@@ -27,7 +27,7 @@ $(document).ready(function() {
     var new_position = $(jump).offset();
     $('.nav-link').removeClass('active');
     $(this).addClass('active');
-    $('#mySidenav').css('width', '0px');
+    $('#mySidenav').css('margin-right', '-160px');
     $('html, body')
       .stop()
       .animate({ scrollTop: new_position.top }, 500);
