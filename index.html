@@ -13,7 +13,6 @@
 
     <!-- Fonts and Stylesheets -->
     <link rel="stylesheet" href="assets/styles.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Social Tags -->
@@ -26,9 +25,9 @@
 
 <body id="home">
     <!-- Navigation -->
-    <span class="openbtn" role="button" aria-label="Open Menu" tabindex="1"><i class="fas fa-bars"></i></span>
+    <button class="openbtn" aria-label="Navigation" name="Navigation"><i class="fas fa-bars"></i></button>
     <nav id="mySidenav" class="sidenav">
-        <span class="closebtn" role="button" aria-label="Close Menu" tabindex="2"><i class="fas fa-times"></i></span>
+        <button class="closebtn" aria-label="Close Navigation" name="Close Navigation"><i class="fas fa-times"></i></button>
         <ul>
             <li><a class="nav-link" href="#home">Home</a></li>
             <li><a class="nav-link" href="#projects">Projects</a></li>
@@ -47,9 +46,9 @@
     </nav>
     <!-- Header -->
     <header>
-        <h1 data-aos="fade-down">Hi, I'm Travis</h1>
-        <p data-aos="fade-in">Developer - Designer - Freelancer</p>
-        <p data-aos="fade-in">A full stack developer, living in Arizona, with a passion for building things from the
+        <h1 data-aos="fade-down" ata-aos-once="true">Hi, I'm Travis</h1>
+        <p data-aos="fade-in" data-aos-once="true">Developer - Designer - Freelancer</p>
+        <p data-aos="fade-in" data-aos-once="true">A full stack developer, living in Arizona, with a passion for building things from the
             ground up.</p>
         <a class="header-contact nav-link" href="#contact">Contact Me</a>
         <div class="more-info"><a class="nav-link" href="#projects" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a></div>
@@ -59,7 +58,7 @@
         <section class="projects" id="projects">
             <h2>Projects</h2>
             <!-- Project 1 -->
-            <div class="project-card" data-aos="fade-in">
+            <div class="project-card" data-aos="fade-in" data-aos-once="true">
                 <div class="project-info">
                     <h3>WatchThisWhere</h3>
                     <p>Find where to stream your favorite movies and shows.</p>
@@ -68,7 +67,7 @@
                 <div class="project-image" style="background-image: url(assets/images/watchthiswhere.png);"></div>
             </div>
             <!-- Project 2 -->
-            <div class="project-card" data-aos="fade-in">
+            <div class="project-card" data-aos="fade-in" data-aos-once="true">
                 <div class="project-info">
                     <h3 class="light">One-Liner</h3>
                     <p class="light">A comical community to post and rate the best jokes.</p>
@@ -78,16 +77,16 @@
                 <div class="project-image" style="background-image: url(assets/images/one-liner.png);"></div>
             </div>
             <!-- Project 3 -->
-            <div class="project-card" data-aos="fade-in">
+            <div class="project-card" data-aos="fade-in" data-aos-once="true">
                 <div class="project-info">
                     <h3>Discscore</h3>
                     <p>A web app to quickly track your disc golf games, scores, and locations.</p>
-                    <a class="project-link light" href="https://discscore.now.sh/" target="_blank" rel="noopener">View Project <span class="sr-only">, Discscore</span><i class="fas fa-external-link-alt"></i></a>
+                    <a class="project-link" href="https://discscore.now.sh/" target="_blank" rel="noopener">View Project <span class="sr-only">, Discscore</span><i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project-image" style="background-image: url(assets/images/discscore.png);"></div>
             </div>
             <!-- Project 4 -->
-            <div class="project-card" data-aos="fade-in">
+            <div class="project-card" data-aos="fade-in" data-aos-once="true">
                 <div class="project-info">
                     <h3 class="light">Movie Info</h3>
                     <p class="light">Want to know more about your favorite movie? Use the Movie Info app to search
@@ -103,7 +102,7 @@
         <section class="resume" id="resume">
             <h2>Resume</h2>
             <h3>Work</h3>
-            <div class="resume-work" data-aos="fade-in">
+            <div class="resume-work" data-aos="fade-in" data-aos-once="true">
                 <div class="work-sub">
                     <p><span class="resume-bold">Progressive Insurance <a href="https://www.progressive.com/"
                                 target="_blank" rel="noopener" aria-label="Progressive Insurance"><i class="fas fa-external-link-alt"></i></a></span></p>
@@ -128,7 +127,7 @@
                 </div>
             </div>
             <h3>Skills</h3>
-            <div class="resume-skills" data-aos="fade-in">
+            <div class="resume-skills" data-aos="fade-in" data-aos-once="true">
                 <div class="skills-sub">
                     <p><span class="resume-bold">Development</span></p>
                     <ul>
@@ -200,12 +199,12 @@
         <section id="contact">
             <h2>Contact</h2>
             <!-- Job Status -->
-            <div class="job-status" data-aos="fade-in">
+            <div class="job-status" data-aos="fade-in" data-aos-once="true">
                 <span class="available">Available for freelance</span>
                 <p>Need help? Let's work together.</p>
             </div>
             <!-- Contact Form -->
-            <div class="contact-form" data-aos="fade-in">
+            <div class="contact-form" data-aos="fade-in" data-aos-once="true">
                 <form action="https://formspree.io/xlepbbld" method="POST">
                     <label for="user-name">Name</label>
                     <input type="text" id="user-name" name="user-name" required>
@@ -213,7 +212,7 @@
                     <input type="email" id="_replyto" name="_replyto" required>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send</button>
+                    <button class="submitbtn" type="submit">Send</button>
                 </form>
             </div>
 

@@ -6,28 +6,16 @@ $(document).ready(function() {
 
   // close side nav
   $('.closebtn').click(function() {
-    $('#mySidenav').css('margin-right', '-160px');
-  });
-
-  $('.openbtn').bind('keypress', function(e) {
-    if(e.keyCode==13){
-      $('#mySidenav').css('margin-right', '0px');
-    }
-  });
-
-  $('.closebtn').bind('keypress', function(e) {
-    if(e.keyCode==13){
-      $('#mySidenav').css('margin-right', '-160px');
-    }
+    $('#mySidenav').css('margin-right', '-300px');
   });
 
   // auto scroll
   $('.nav-link').click(function() {
     var jump = $(this).attr('href');
     var new_position = $(jump).offset();
-    $('.nav-link').removeClass('active');
-    $(this).addClass('active');
-    $('#mySidenav').css('margin-right', '-160px');
+    // $('.nav-link').removeClass('active');
+    // $(this).addClass('active');
+    $('#mySidenav').css('margin-right', '-300px');
     $('html, body')
       .stop()
       .animate({ scrollTop: new_position.top }, 500);

@@ -89,7 +89,10 @@ section {
   position: fixed;
   top: 20px;
   right: 20px;
+  padding: 5px;
   font-size: 30px;
+  background-color: transparent;
+  border: none;
   z-index: 900;
   cursor: pointer;
 }
@@ -100,7 +103,7 @@ section {
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 300px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -108,14 +111,15 @@ section {
   background-color: #22252c;
   overflow-x: hidden;
   padding-top: 60px;
-  margin-right: -160px;
+  margin-right: -300px;
   transition: 0.5s;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px;
   text-decoration: none;
   font-size: 25px;
+  text-align: center;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -131,8 +135,11 @@ section {
   top: 20px;
   right: 20px;
   font-size: 30px;
+  padding: 5px;
   margin-left: 50px;
   color: #f1f1f1;
+  background-color: transparent;
+  border: none;
 }
 
 .closebtn {
@@ -306,7 +313,7 @@ header > p {
 }
 
 .project-card:nth-child(4) {
-  background-color: #23a6d5;
+  background-color: #53e3a6;
 }
 
 .project-card:nth-child(5) {
@@ -503,7 +510,7 @@ svg {
 
 .available {
   padding: 5px 10px;
-  background-color: #0c913d;
+  background-color: #17592f;
   border-radius: 5px;
 
   font-weight: 400;
@@ -537,7 +544,7 @@ textarea {
   outline: 0;
 }
 
-button {
+.submitbtn {
   width: 100%;
   margin: 10px auto;
   padding: 10px 0;
@@ -550,7 +557,7 @@ button {
   transition: 0.25s ease-in-out;
 }
 
-button:hover {
+.submitbtn:hover {
   background-color: #9f9f9f;
 }
 
