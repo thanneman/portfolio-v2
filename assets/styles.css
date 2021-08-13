@@ -91,6 +91,7 @@ section {
   right: 20px;
   padding: 5px;
   font-size: 30px;
+  color: #000000;
   background-color: transparent;
   border: none;
   z-index: 900;
@@ -305,18 +306,23 @@ header > p {
 
 .project-card:nth-child(2) {
   margin-top: 20px;
-  background-color: #48dacb;
+  background-color: #ff4a6e;
 }
 
 .project-card:nth-child(3) {
-  background-color: #0e60fb;
+  margin-top: 20px;
+  background-color: #48dacb;
 }
 
 .project-card:nth-child(4) {
-  background-color: #53e3a6;
+  background-color: #0e60fb;
 }
 
 .project-card:nth-child(5) {
+  background-color: #53e3a6;
+}
+
+.project-card:nth-child(6) {
   background-color: #656565;
 }
 
