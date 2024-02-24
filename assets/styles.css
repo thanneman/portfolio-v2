@@ -306,23 +306,23 @@ header > p {
 
 .project-card:nth-child(2) {
   margin-top: 20px;
-  background-color: #2563eb;
+  background-color: #06B6D4;
 }
 
 .project-card:nth-child(3) {
-  background-color: #ff4a6e;
+  background-color: #EB5643;
 }
 
 .project-card:nth-child(4) {
-  background-color: #48dacb;
+  background-color: #b8b8b8;
 }
 
 .project-card:nth-child(5) {
-  background-color: #0e60fb;
+  background-color: #ff4a6e;
 }
 
 .project-card:nth-child(6) {
-  background-color: #53e3a6;
+  background-color: #48dacb;
 }
 
 .project-info {
